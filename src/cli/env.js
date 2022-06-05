@@ -1,3 +1,5 @@
 export const parseEnv = () => {
-    // Write your code here 
+  for (const key in process.env) {
+    console.log(`RSS_${key}=${process.env[key]}`);
+  }
 };
